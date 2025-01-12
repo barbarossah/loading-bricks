@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+.loading-box {
+  width: 40%;
+  height: 30%;
+  background-color: #49464a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-bricks {
+  width: 132px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  gap: 3px;
+}
+
+.brick {
+  width: 30px;
+  height: 30px;
+  background-image: linear-gradient(to right, #fd7e08, #fe6b1f);
+  border-radius: 4px;
+}
+
+.brick-5 {
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: brick-5 6s infinite;
+}
+
+@keyframes brick-5 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  8.3% {
+    transform: translateY(33px);
+  }
+
+  16.6% {
+    transform: translateY(33px);
+  }
+
+  24.9% {
+    transform: translateY(33px);
+  }
+
+  33.2% {
+    transform: translateY(33px);
+  }
+
+  41.5% {
+    transform: translateY(33px);
+  }
+  49.8% {
+    transform: translateY(33px);
+  }
+  /* 7-step */
+  53.95% {
+    transform: translateY(63px);
+  }
+  58.1% {
+    transform: translate(33px, 63px);
+  }
+  /* 7-step */
+  66.68% {
+    transform: translate(33px, 33px);
+  }
+  75.02% {
+    transform: translate(33px, 33px);
+  }
+  83.35% {
+    transform: translate(33px, 33px);
+  }
+
+  91.64% {
+    transform: translate(33px, 33px);
+  }
+  95.79% {
+    transform: translateX(33px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
